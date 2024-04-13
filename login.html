@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<link rel="stylesheet" href="./header.css"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Login</title>
+</head>
+
+<body>
+    <div class = "header">
+        <div class="navbar">
+            <nav>
+                <ul>
+                    <li><a href="faq.html">FAQ</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="profile.html">Profile</a></li>
+                </ul>
+            </nav>
+            </div>
+        <div class="login-signup">
+            <a href="login.html">Login</a> | <a href="signup.html">Sign Up</a>
+        </div>
+    </div>
+    <div class="form">
+        <h2>Login</h2>
+        <form id="loginForm" onsubmit="return login()">
+            <input type="text" id="loginUsername" placeholder="Username" required><br>
+            <input type="password" id="loginPassword" placeholder="Password" required><br>
+            <button type="submit">Login</button>
+        </form>
+        <p id="loginMessage" class="error"></p>
+        <p>Don't have an account yet? <a href="signup.html">Sign up now!</a></p>
+    </div>
+
+    <script src="login.js"></script>
+</body>
+</html>
