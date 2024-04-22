@@ -1,0 +1,35 @@
+#gameBoard {
+    width: 900px;
+    display: grid;
+    grid-template-columns: repeat(10, 90px); /* Adjusted to 9 columns */
+    grid-template-rows: repeat(10, 90px); /* Adjusted to 8 rows */
+    margin: auto;
+}
+
+.tile {
+    width: 40px;
+    height: 40px;
+    border: 1px solid white;
+    background-image: url('background.jpg');
+    background-size: cover;
+}
+
+.wall {
+    background-image: url('wall.jpg');
+    background-size: cover;
+}
+
+.player {
+    background-image: url('gg.png');
+    background-size: cover;
+}
+
+.box {
+    background-image: url('box.png');
+    background-size: cover;
+}
+
+.target {
+    background-image: url('goal.png');
+    background-size: cover;
+}
