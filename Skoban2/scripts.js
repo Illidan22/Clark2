@@ -50,13 +50,13 @@ document.addEventListener('DOMContentLoaded', function() {
         }
     }
 
-    function canMoveTo(x, y, dx, dy) {
+    function canMoveTo(x, y, dx, dy){
         if (x < 0 || y < 0 || x >= level[0].length || y >= level.length) {
             return false;
         }
         const targetCell = level[y][x];
 
-        if (targetCell === ' ') {
+        if (targetCell === 'B') {
             const beyondX = x + dx;
             const beyondY = y + dy;
             if (beyondX < 0 || beyondY < 0 || beyondX >= level[0].length || beyondY >= level.length) {
@@ -65,7 +65,7 @@ document.addEventListener('DOMContentLoaded', function() {
             const beyondCell = level[beyondY][beyondX];
             return beyondCell === ' ' || beyondCell === 'T';
         }
-        return targetCell === 'W';
+        return targetCell !== 'W';
     }
 
 
