@@ -1,0 +1,81 @@
+* {
+    margin: 0; padding: 0;
+    }
+.header {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+}
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+nav ul li {
+    margin-right: 20px;
+}
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+.login-signup {
+    margin-left: auto;
+}
+.login-signup a{
+    color: white;
+}
+
+.form{
+    background-color: #ffffff2a;
+    padding: 1em;
+    border-radius: 5px;
+    box-shadow: 5px 5px 10px black;
+    width: 300px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    min-height: 200px;
+    margin: auto;
+    margin-top: 15%;
+    border: 3px solid rgba(87, 116, 209, 0.616);
+    padding: 10px;
+}
+.form h2{
+    margin-bottom: 20px;
+    margin-top:20px;
+    font-size: 30pt;
+    color: rgba(255, 255, 255, 0.411);
+}
+#loginUsername, #signupUsername, #signupPassword, #loginPassword, #signupPasswordCheck{
+    margin-bottom: 20px;
+    height:25px;
+    font-size:14pt;
+}
+button {
+    background-color: #7b04aa86; /* Green */
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    border-radius: 12px;
+}
+.question{
+    font-size: 14pt;
+    color: rgba(255, 255, 255, 0.479);
+}
+.error{
+    font-size: 14pt;
+    color: rgba(255, 61, 61, 0.808);
+}
+
+a:visited {color: #ffffff}  
+a:link {color: #ffffff} 
